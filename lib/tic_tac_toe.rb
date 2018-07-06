@@ -49,7 +49,7 @@ end
 
 
 def turn_count(board)
-  counter = 0
+  counter = 1
   board.each do |item|
     if item.downcase == "x" || item.downcase == "o"
       counter = counter + 1
