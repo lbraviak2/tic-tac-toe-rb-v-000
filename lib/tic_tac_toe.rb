@@ -49,13 +49,7 @@ end
 
 
 def turn_count(board)
-  counter = 0
-  board.each do |item|
-    if item.downcase == "x" || item.downcase == "o"
-      counter = counter + 1
-    end
-    counter
-  end
+  board.count{|token| token == "X" || token == "O"}
 end
 
 def current_player(board)
