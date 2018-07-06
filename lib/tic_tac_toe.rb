@@ -16,8 +16,6 @@ end
 def move(board, index, player)
   player = current_player(board)
   board[index] = player
-  puts index
-  puts player
 end
 
 #game_status
